@@ -39,6 +39,6 @@ The repository is structured into different categories based on the type of prob
 ## 📖 Contributing
 Contributions are welcome! If you'd like to add more algorithms, fix issues, or improve documentation:
 
-Fork the repository.
-Make your changes in a new branch.
-Submit a pull request.
+* Fork the repository.
+* Make your changes in a new branch.
+* Submit a pull request.
