@@ -18,17 +18,16 @@ class SlidingWindow:
             # Add the current element to the window sum
             current_sum += arr[j]
 
-             # If window size is less than 'k', move the right pointer
-            if j - i + 1 < k:
-                j += 1
-            else:
-                # Once we hit the required window size, update the max sum
+            # Once we hit the required window size, update the max sum
+            if j - i + 1 == k:
                 max_sum = max(max_sum,current_sum)
                 # Slide the window: remove the element at the left pointer
                 current_sum-=arr[i]
-                # Move both pointers to slide the window
-                j += 1
+                # Move left pointer to slide the window
                 i += 1
+            
+            # Move the right pointer to move the array
+            j += 1
 
         return max_sum
     
